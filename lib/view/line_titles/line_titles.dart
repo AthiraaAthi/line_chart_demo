@@ -12,11 +12,20 @@ class LineTitles {
         getTitlesWidget: (value, meta) {
           switch (value.toInt()) {
             case 2:
-              return Text("MAR");
+              return Text(
+                "MAR",
+                //style: TextStyle(color: Colors.white),
+              );
             case 5:
-              return Text("JUN");
+              return Text(
+                "JUN",
+                //style: TextStyle(color: Colors.white),
+              );
             case 8:
-              return Text("SEP");
+              return Text(
+                "SEP",
+                //style: TextStyle(color: Colors.white),
+              );
           }
           return Text('');
         },

@@ -13,7 +13,7 @@ class LineChartWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.white,
         body: LineChart(
           LineChartData(
             minX: 0,
@@ -43,13 +43,14 @@ class LineChartWidget extends StatelessWidget {
             ),
             lineBarsData: [
               LineChartBarData(
-                color: Colors.amber,
                 isCurved: true,
                 gradient: LinearGradient(
                   colors: gradientColors,
                 ),
                 barWidth: 5,
-                //dotData: FlDotData(show: false),
+                dotData: FlDotData(
+                  show: true,
+                ),
                 belowBarData: BarAreaData(
                   show: true,
                   gradient: LinearGradient(
@@ -69,7 +70,7 @@ class LineChartWidget extends StatelessWidget {
                   FlSpot(9.5, 3),
                   FlSpot(11, 4),
                 ],
-              )
+              ),
             ],
           ),
         ),
